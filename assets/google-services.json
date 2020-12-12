@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "103704779806",
+    "firebase_url": "https://hiu-dwetpj.firebaseio.com",
+    "project_id": "hiu-dwetpj",
+    "storage_bucket": "hiu-dwetpj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103704779806:android:3326513d2a4a89cd",
+        "android_client_info": {
+          "package_name": "com.woraphon.chatOK"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103704779806-fsbd2u0db4ii833qkdmdup1amd2k8cjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcXufJ42q0VYjd2PsCnQ1n98Oq0CuZ6A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103704779806-okt445lcn9gt4lp2v12khs6hjpvv6t27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

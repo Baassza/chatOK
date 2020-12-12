@@ -1,0 +1,517 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="gR:@c[/[p9rD;qNUEv1+" x="-670" y="-390">
+    <field name="NAME">lang</field>
+    <value name="VALUE">
+      <block type="text" id="9b#vlN:fD!N}r:)le07t">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="%eoL0HTQ4Jc41B7cZ}mY" x="-670" y="-350">
+    <mutation component_type="Form" is_generic="false" instance_name="pass" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">pass</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="!W=Eos3;H7UL23?6ryk*">
+        <field name="VAR">global lang</field>
+        <value name="VALUE">
+          <block type="component_method" id="PJo}IFZU?50#Fx6{3:Fr">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id=";K*SHRT?ez=w%:=|yH!;">
+                <field name="TEXT">lang</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="/*MF3C5o6,J5WWBUBqGm">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="#:/oxAr.5$Ui..Lv|8n3" inline="false">
+            <mutation name="Set"></mutation>
+            <field name="PROCNAME">Set</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="G|u__|lB|B!S~HllSRDD" x="-670" y="-190">
+    <field name="NAME">Set</field>
+    <statement name="STACK">
+      <block type="controls_if" id=":BwubXPVBF2k.;z~S;W?">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="%aaQM0Y7F6w57]J_pWE4">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="owyx+xAbuS!pP7VO;e4%">
+                <field name="VAR">global lang</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="RnQd@pns?yu5C%vIn(WR">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="2|UBUKQGbqK#1B~PNnx$">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="pass_Etext"></mutation>
+            <field name="COMPONENT_SELECTOR">pass_Etext</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="$|-aF#Hs}PR`#;{*#V38">
+                <field name="TEXT">Email</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="@Bt)@L=zLZdSbc8X/Rw0">
+                <mutation component_type="TextBox" set_or_get="set" property_name="Hint" is_generic="false" instance_name="pass_email"></mutation>
+                <field name="COMPONENT_SELECTOR">pass_email</field>
+                <field name="PROP">Hint</field>
+                <value name="VALUE">
+                  <block type="text" id="Y5Jp.G!jo%0t!Q[;7R7z">
+                    <field name="TEXT">Email</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="G%HFC(Wfw2*].XuaoTd@">
+                    <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="Button_pass"></mutation>
+                    <field name="COMPONENT_SELECTOR">Button_pass</field>
+                    <field name="PROP">Image</field>
+                    <value name="VALUE">
+                      <block type="text" id="-NeX,rx0/N4*U-pLF`MF">
+                        <field name="TEXT">pass_EN.png</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="8wB+D_ZOt`2.PWOMI5Rr">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="pass_Etext"></mutation>
+            <field name="COMPONENT_SELECTOR">pass_Etext</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="CI$S)d6Db-KY|yJ2*`dz">
+                <field name="TEXT">อีเมล</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="TqXP`pSqrln5-u;q(%*;">
+                <mutation component_type="TextBox" set_or_get="set" property_name="Hint" is_generic="false" instance_name="pass_email"></mutation>
+                <field name="COMPONENT_SELECTOR">pass_email</field>
+                <field name="PROP">Hint</field>
+                <value name="VALUE">
+                  <block type="text" id="1O3YqkhcV5+c)[E_~4z8">
+                    <field name="TEXT">อีเมล</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="fISOeKr4L7CsF:Z)[Yhf">
+                    <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="Button_pass"></mutation>
+                    <field name="COMPONENT_SELECTOR">Button_pass</field>
+                    <field name="PROP">Image</field>
+                    <value name="VALUE">
+                      <block type="text" id="nuk%rPwCe-lyDk+N$huQ">
+                        <field name="TEXT">pass_TH.png</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Y+vm;PA({#vE:35zX5~2" x="-50" y="-130">
+    <mutation component_type="Notifier" is_generic="false" instance_name="Notifier1" event_name="AfterMessageDialog"></mutation>
+    <field name="COMPONENT_SELECTOR">Notifier1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="0.gQG}+VEI-D;ICUG((A">
+        <value name="SCREEN">
+          <block type="text" id="Z`|2+KY:2km5jGJG}jlx">
+            <field name="TEXT">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="Kg_CbPbT^-lKy$S~Q*g@" x="-670" y="90">
+    <field name="NAME">API_KEY</field>
+    <value name="VALUE">
+      <block type="text" id="e)gH-PN=9)W-3!lF$u2}">
+        <field name="TEXT">AIzaSyBcXufJ42q0VYjd2PsCnQ1n98Oq0CuZ6A8</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="g$=aco^xyLckpCEb,M^+" x="-670" y="150">
+    <mutation component_type="Button" is_generic="false" instance_name="Button_pass" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button_pass</field>
+    <statement name="DO">
+      <block type="controls_if" id="Uxeo$tWL,g/O,n5X1C]D">
+        <value name="IF0">
+          <block type="logic_negate" id="eVRt)0:=`Dt8IA1uOO~?">
+            <value name="BOOL">
+              <block type="text_isEmpty" id="BGmQO8L$7H8o,W{g:X}k">
+                <value name="VALUE">
+                  <block type="component_set_get" id="@GJIrLwcY2|cQ4d1Rq@6">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="pass_email"></mutation>
+                    <field name="COMPONENT_SELECTOR">pass_email</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="KXB0(zY#ZMDXg)/s~PN]">
+            <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web1</field>
+            <field name="PROP">Url</field>
+            <value name="VALUE">
+              <block type="text_join" id="Ze,d/;@h~U@Bi7!jKVRb">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="0Skg%j5+6AE:7P!X-m4s">
+                    <field name="TEXT">https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="Fw{DJu2JCyB+-=/C,y~B">
+                    <field name="VAR">global API_KEY</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="+W}H}zn)p1;JFSvDsZpc">
+                <mutation component_type="Web" method_name="PostText" is_generic="false" instance_name="Web1"></mutation>
+                <field name="COMPONENT_SELECTOR">Web1</field>
+                <value name="ARG0">
+                  <block type="text_join" id="0F[ugcpfI@^o:p+VsO{h">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id=",)[mU%T3a%,v,m_0jG.q">
+                        <field name="TEXT">requestType=PASSWORD_RESET&amp;email=</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="component_set_get" id="x)0HaG8(aS@!7YHof*w2">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="pass_email"></mutation>
+                        <field name="COMPONENT_SELECTOR">pass_email</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="q8~@w:x,u^Vy+nSyi]i0" x="-670" y="410">
+    <mutation component_type="Web" is_generic="false" instance_name="Web1" event_name="GotText"></mutation>
+    <field name="COMPONENT_SELECTOR">Web1</field>
+    <statement name="DO">
+      <block type="controls_if" id="cgHXxS}.^lTxl/cawPT4">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="Ih|$q1dXW/:{:%|M`pl5">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="{+]FSCkEZLavM)[Vz(Pb">
+                <mutation>
+                  <eventparam name="responseCode"></eventparam>
+                </mutation>
+                <field name="VAR">responseCode</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="8V2)0zlARX7OY+3KT.~K">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="iCwK!TuXUI=K9YFhF1!E">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="controls_choose" id="Xvk2n20p}CN++@jHPArQ">
+                <value name="TEST">
+                  <block type="math_compare" id="0p*#89U_+f(:-CAe%G*u">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="o0C}qn|h7-Ia#WU)vXl%">
+                        <field name="VAR">global lang</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="I$0aED$[361gug%.*o,.">
+                        <field name="TEXT">EN</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THENRETURN">
+                  <block type="text" id="kW#,/P^J9*WO#c:zGtw`">
+                    <field name="TEXT">We have sent you an email. Please visit the email and follow the steps.</field>
+                  </block>
+                </value>
+                <value name="ELSERETURN">
+                  <block type="text" id="6tE38F3LTK{Jhi(}P+0)">
+                    <field name="TEXT">เราได้ส่งอีเมลให้คุณแล้วกรุณาอ่านดูอีเมลแล้วทำตามขั้นตอนตอน</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="controls_choose" id="u(tsy~t%MM5KUSuGF]YM">
+                <value name="TEST">
+                  <block type="math_compare" id="XKMH,}CL0}T{+hm6?OeC">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="LhwzsQDKnS/|OM/uZ-kG">
+                        <field name="VAR">global lang</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="c_ax1#-U,sJ#GYwo+DVh">
+                        <field name="TEXT">EN</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THENRETURN">
+                  <block type="text" id="y0:HUTvY_Kkhhzl97@5Q">
+                    <field name="TEXT">Change the password successfully.</field>
+                  </block>
+                </value>
+                <value name="ELSERETURN">
+                  <block type="text" id="}BKEdOZvhy{JH/|tbxC]">
+                    <field name="TEXT">เปลี่ยนรหัสผ่าน สำเร็จ</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="controls_choose" id="9dtz2#w*L/L)(sRF9$Tc">
+                <value name="TEST">
+                  <block type="math_compare" id="/lV@mmM%w$}d]bPiXEBV">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="9Jh(/nnlm#hhQFY0rtgv">
+                        <field name="VAR">global lang</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="tSAeuAcG6uE1#4bwqen{">
+                        <field name="TEXT">EN</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THENRETURN">
+                  <block type="text" id="BMv{U8J};/u;6$58:Nv0">
+                    <field name="TEXT">OK</field>
+                  </block>
+                </value>
+                <value name="ELSERETURN">
+                  <block type="text" id="y~7Q)HNFmTv1_sxQigc|">
+                    <field name="TEXT">ตกลง</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="%XOp=LO;Mh:!;6)^m_0#">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="controls_choose" id="tiBxv,%^2;?sHg*=_^mS">
+                <value name="TEST">
+                  <block type="math_compare" id="YrmP39)a|LJf.HTcc9xv">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="|=Tf/[qdP419y^fld%`p">
+                        <field name="VAR">global lang</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="1FTfaY_Z.;r80lqJy(PP">
+                        <field name="TEXT">EN</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THENRETURN">
+                  <block type="text_join" id="IYx09L2jTE@B*^BgGT1}">
+                    <mutation items="6"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="VyeM$SHy:P}9Wz~scNsF">
+                        <field name="TEXT">Error: </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="lexical_variable_get" id="i+9hT*syuMR^2$Q{9^9s">
+                        <mutation>
+                          <eventparam name="responseCode"></eventparam>
+                        </mutation>
+                        <field name="VAR">responseCode</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="text" id="*_h8nN8!?`8fG2dJ|A/m">
+                        <field name="TEXT">\nType:</field>
+                      </block>
+                    </value>
+                    <value name="ADD3">
+                      <block type="lexical_variable_get" id="rFDOLy2B)hKRocJj!~1G">
+                        <mutation>
+                          <eventparam name="responseType"></eventparam>
+                        </mutation>
+                        <field name="VAR">responseType</field>
+                      </block>
+                    </value>
+                    <value name="ADD4">
+                      <block type="text" id="Vm`txTba$N+`vCyBr*us">
+                        <field name="TEXT">\nMessage: </field>
+                      </block>
+                    </value>
+                    <value name="ADD5">
+                      <block type="lexical_variable_get" id="c:R]+`KzyXfqw1e)z8!D">
+                        <mutation>
+                          <eventparam name="responseContent"></eventparam>
+                        </mutation>
+                        <field name="VAR">responseContent</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ELSERETURN">
+                  <block type="text_join" id="rZ7b#o(|17zg(@-jd?Jv">
+                    <mutation items="6"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="1|)EC=!PlN|5R8:K@|?x">
+                        <field name="TEXT">ผิดพลาด  </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="lexical_variable_get" id="we:~c?kemnKc%uc^X3;?">
+                        <mutation>
+                          <eventparam name="responseCode"></eventparam>
+                        </mutation>
+                        <field name="VAR">responseCode</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="text" id="JY8Sx7XFGmi2VL1G`[=S">
+                        <field name="TEXT">\nชนิด</field>
+                      </block>
+                    </value>
+                    <value name="ADD3">
+                      <block type="lexical_variable_get" id="g3~SzoS5jhlsw4;:FCa3">
+                        <mutation>
+                          <eventparam name="responseType"></eventparam>
+                        </mutation>
+                        <field name="VAR">responseType</field>
+                      </block>
+                    </value>
+                    <value name="ADD4">
+                      <block type="text" id="iGvIkO]ke}GRhov?TM2]">
+                        <field name="TEXT">\nรายละเอียด</field>
+                      </block>
+                    </value>
+                    <value name="ADD5">
+                      <block type="lexical_variable_get" id="nj3+n!v9sEjW`AzgX@rD">
+                        <mutation>
+                          <eventparam name="responseContent"></eventparam>
+                        </mutation>
+                        <field name="VAR">responseContent</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="controls_choose" id="4!4*M=/XC42xyg32P]Ct">
+                <value name="TEST">
+                  <block type="math_compare" id="v#H]q@SOEC/pq8lIKV#u">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="ZJy9J-n-[cHuL{R[1qMW">
+                        <field name="VAR">global lang</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="U+86CYQ%#*Q?EZiRu|1,">
+                        <field name="TEXT">EN</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THENRETURN">
+                  <block type="text" id="#PN9bCd9[b69;(?HVwRb">
+                    <field name="TEXT">Error</field>
+                  </block>
+                </value>
+                <value name="ELSERETURN">
+                  <block type="text" id="{axeIX(t~:`l;0ZKKU[d">
+                    <field name="TEXT">ผิดพลาด</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="controls_choose" id="T37J=}-7QZsL/%I-[^IA">
+                <value name="TEST">
+                  <block type="math_compare" id="s-/d8wC]KWA!62Oa[9`r">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lexical_variable_get" id="+LOMCh*D5dBPutvLFCeG">
+                        <field name="VAR">global lang</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="Y+^N!I~vPDT~+6?sa}cT">
+                        <field name="TEXT">EN</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THENRETURN">
+                  <block type="text" id="1R4}9b`lmaa8.L}YuRe+">
+                    <field name="TEXT">OK</field>
+                  </block>
+                </value>
+                <value name="ELSERETURN">
+                  <block type="text" id=".}W}J^F2@J+xo?%84}e$">
+                    <field name="TEXT">ตกลง</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="210" language-version="26"></yacodeblocks>
+</xml>

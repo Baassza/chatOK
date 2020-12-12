@@ -1,0 +1,409 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="gR:@c[/[p9rD;qNUEv1+" x="-670" y="-390">
+    <field name="NAME">lang</field>
+    <value name="VALUE">
+      <block type="text" id="9b#vlN:fD!N}r:)le07t">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="%eoL0HTQ4Jc41B7cZ}mY" x="-670" y="-350">
+    <mutation component_type="Form" is_generic="false" instance_name="login" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">login</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="!W=Eos3;H7UL23?6ryk*">
+        <field name="VAR">global lang</field>
+        <value name="VALUE">
+          <block type="component_method" id="YwsTE/S0LM)MV`/soW|U">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id="qNS6-(uCaB@_7b.v(~s5">
+                <field name="TEXT">lang</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="`n=LO#,{P{-G2|pnD3i0">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="#:/oxAr.5$Ui..Lv|8n3" inline="false">
+            <mutation name="Set"></mutation>
+            <field name="PROCNAME">Set</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="G|u__|lB|B!S~HllSRDD" x="-670" y="-190">
+    <field name="NAME">Set</field>
+    <statement name="STACK">
+      <block type="controls_if" id=":BwubXPVBF2k.;z~S;W?">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="%aaQM0Y7F6w57]J_pWE4">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="owyx+xAbuS!pP7VO;e4%">
+                <field name="VAR">global lang</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="RnQd@pns?yu5C%vIn(WR">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="2|UBUKQGbqK#1B~PNnx$">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="login_Etext"></mutation>
+            <field name="COMPONENT_SELECTOR">login_Etext</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="$|-aF#Hs}PR`#;{*#V38">
+                <field name="TEXT">Email</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="@Bt)@L=zLZdSbc8X/Rw0">
+                <mutation component_type="TextBox" set_or_get="set" property_name="Hint" is_generic="false" instance_name="login_email"></mutation>
+                <field name="COMPONENT_SELECTOR">login_email</field>
+                <field name="PROP">Hint</field>
+                <value name="VALUE">
+                  <block type="text" id="Y5Jp.G!jo%0t!Q[;7R7z">
+                    <field name="TEXT">Email</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="s.98yP,1M4,.u[Jm$tbO">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="login_Ptext"></mutation>
+                    <field name="COMPONENT_SELECTOR">login_Ptext</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="text" id="|w-f8OCbAR2tb=,,U)2j">
+                        <field name="TEXT">Password</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="rX0p80w{TNeb6rK:Y[(g">
+                        <mutation component_type="TextBox" set_or_get="set" property_name="Hint" is_generic="false" instance_name="login_password"></mutation>
+                        <field name="COMPONENT_SELECTOR">login_password</field>
+                        <field name="PROP">Hint</field>
+                        <value name="VALUE">
+                          <block type="text" id="6_d7u8=rn`hK{3;kE@Pf">
+                            <field name="TEXT">Password</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="G%HFC(Wfw2*].XuaoTd@">
+                            <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="Button_login"></mutation>
+                            <field name="COMPONENT_SELECTOR">Button_login</field>
+                            <field name="PROP">Image</field>
+                            <value name="VALUE">
+                              <block type="text" id="-NeX,rx0/N4*U-pLF`MF">
+                                <field name="TEXT">login_EN.png</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="8wB+D_ZOt`2.PWOMI5Rr">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="login_Etext"></mutation>
+            <field name="COMPONENT_SELECTOR">login_Etext</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="CI$S)d6Db-KY|yJ2*`dz">
+                <field name="TEXT">อีเมล</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="TqXP`pSqrln5-u;q(%*;">
+                <mutation component_type="TextBox" set_or_get="set" property_name="Hint" is_generic="false" instance_name="login_email"></mutation>
+                <field name="COMPONENT_SELECTOR">login_email</field>
+                <field name="PROP">Hint</field>
+                <value name="VALUE">
+                  <block type="text" id="1O3YqkhcV5+c)[E_~4z8">
+                    <field name="TEXT">อีเมล</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="#le|o55J[RDov*Pu]^Px">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="login_Ptext"></mutation>
+                    <field name="COMPONENT_SELECTOR">login_Ptext</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="text" id="69(xktgy!N$YxYjTLpU;">
+                        <field name="TEXT">รหัสผ่าน</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="M8mENpwsy?*kc-gr}xLW">
+                        <mutation component_type="TextBox" set_or_get="set" property_name="Hint" is_generic="false" instance_name="login_password"></mutation>
+                        <field name="COMPONENT_SELECTOR">login_password</field>
+                        <field name="PROP">Hint</field>
+                        <value name="VALUE">
+                          <block type="text" id="4?9#Sab!`3SvWCtw=2^z">
+                            <field name="TEXT">รหัสผ่าน</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="fISOeKr4L7CsF:Z)[Yhf">
+                            <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="Button_login"></mutation>
+                            <field name="COMPONENT_SELECTOR">Button_login</field>
+                            <field name="PROP">Image</field>
+                            <value name="VALUE">
+                              <block type="text" id="nuk%rPwCe-lyDk+N$huQ">
+                                <field name="TEXT">login_TH.png</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="g$=aco^xyLckpCEb,M^+" x="-670" y="190">
+    <mutation component_type="Button" is_generic="false" instance_name="Button_login" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button_login</field>
+    <statement name="DO">
+      <block type="controls_if" id="Uxeo$tWL,g/O,n5X1C]D">
+        <value name="IF0">
+          <block type="logic_negate" id="eVRt)0:=`Dt8IA1uOO~?">
+            <value name="BOOL">
+              <block type="logic_operation" id="*T#7nlBZ:!94s_x.p{2f">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="text_isEmpty" id="BGmQO8L$7H8o,W{g:X}k">
+                    <value name="VALUE">
+                      <block type="component_set_get" id="@GJIrLwcY2|cQ4d1Rq@6">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="login_email"></mutation>
+                        <field name="COMPONENT_SELECTOR">login_email</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text_isEmpty" id="-ul4L/C}x$TcnS|FEm^@">
+                    <value name="VALUE">
+                      <block type="component_set_get" id="/yX4pb2^-oOF(q{@-feG">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="login_password"></mutation>
+                        <field name="COMPONENT_SELECTOR">login_password</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="GSo7]5#=BGJ/Wz?aFc@{">
+            <mutation component_type="KodularFirebaseAuthentication" method_name="EmailPasswordLogin" is_generic="false" instance_name="Firebase_Authentication1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+            <value name="ARG0">
+              <block type="component_set_get" id="k4B`_9J;Svo]=vP[H8uz">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="login_email"></mutation>
+                <field name="COMPONENT_SELECTOR">login_email</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id=",bxMlF9+8grJ/QBCB93M">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="login_password"></mutation>
+                <field name="COMPONENT_SELECTOR">login_password</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="|`_gn+Q,vpKMy0YlV.,T" x="-990" y="370">
+    <mutation component_type="KodularFirebaseAuthentication" is_generic="false" instance_name="Firebase_Authentication1" event_name="LoginFailed"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+    <statement name="DO">
+      <block type="component_method" id="#^Ps|~Q0r?F9u26~?Nyn">
+        <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="controls_choose" id=";g8iwg|gD7k9DFXRjHuV">
+            <value name="TEST">
+              <block type="math_compare" id="D`F5FTo$x~g50~6+|Yo`">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="qN3Ppi29RkDhsxuJT(]t">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="tEW3#*sh12eoWFm+ef+~">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text_join" id="FwCOoNip}EzPDK(CjlC+">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="4N^yO4G*QE9Eym(1lr89">
+                    <field name="TEXT">Failed in:  </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="?i,BA^6L$dk{p=)_^LkO">
+                    <mutation>
+                      <eventparam name="provider"></eventparam>
+                    </mutation>
+                    <field name="VAR">provider</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text_join" id="@i1eX|pN!xa/s^YYhU,1">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="V@z?bhNKkUa?*!y7=Lg1">
+                    <field name="TEXT">เกิดความผิดพลาดที่  </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="Y]rY;AtTP`=-6SVf(~E{">
+                    <mutation>
+                      <eventparam name="provider"></eventparam>
+                    </mutation>
+                    <field name="VAR">provider</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="controls_choose" id="#kQBM*sqmpe;@`U}$tZl">
+            <value name="TEST">
+              <block type="math_compare" id="yXz[2oerw8iY!O^$CSgT">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="RLdmsKQ|-rt{LkyP6!Fp">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="}2fO;rsd/j/{$4amw$^k">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text" id=":G6cUdW0*+;srruhj}5D">
+                <field name="TEXT">Error</field>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text" id="FN%s)#oThy7%ob^{.ZX@">
+                <field name="TEXT">ผิดพลาด</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="controls_choose" id="/?49%1Z[*NP-vxqt[9r;">
+            <value name="TEST">
+              <block type="math_compare" id="H=4R@}*Y^s@%M43,3o`(">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="c:A8TFiOUykR+U4=?Nm)">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="v`w{uT^5XS{{m[!`B4!b">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text" id="/h@$_=D~:%#hITTY0q4r">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text" id="aJaVHIAY]@gOf*CH#4_w">
+                <field name="TEXT">ตกลง</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="L_tpJb+apaotqtj30wQT" x="-270" y="390">
+    <mutation component_type="KodularFirebaseAuthentication" is_generic="false" instance_name="Firebase_Authentication1" event_name="LoginSuccess"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+    <statement name="DO">
+      <block type="component_method" id="`]sS8Z0.Wex`gt#o|6V?">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="BH=f/~V8#A;qSZ=(Ztp/">
+            <field name="TEXT">login</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="math_number" id="9(|qRL9d#R-d(.gES47;">
+            <field name="NUM">200</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreen" id="DtbSmdM(7fynp,ee5nlH">
+            <value name="SCREEN">
+              <block type="text" id="-P|}M]U%|4;*1Tm3bStT">
+                <field name="TEXT">chat</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Y+vm;PA({#vE:35zX5~2" x="-990" y="790">
+    <mutation component_type="Notifier" is_generic="false" instance_name="Notifier1" event_name="AfterMessageDialog"></mutation>
+    <field name="COMPONENT_SELECTOR">Notifier1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="0.gQG}+VEI-D;ICUG((A">
+        <value name="SCREEN">
+          <block type="text" id="Z`|2+KY:2km5jGJG}jlx">
+            <field name="TEXT">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="210" language-version="26"></yacodeblocks>
+</xml>

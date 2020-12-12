@@ -1,0 +1,265 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="1e!+_T$-shXpe#OkX`/T" x="-590" y="-270">
+    <field name="NAME">lang</field>
+    <value name="VALUE">
+      <block type="text" id="Qfdj4W4#$Kq|p`.n{KG%">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="guG18)R6s_8:e:Xzg|3-" x="-590" y="-230">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="3VG!HDV3w8]}w3maQSNk">
+        <field name="VAR">global lang</field>
+        <value name="VALUE">
+          <block type="component_method" id="Ig!+HE~/]:1=2/;dI{*9">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id="|^~LnZ8g3t60,mDKfm(9">
+                <field name="TEXT">lang</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="2xWJ.dUxSB@Hg.,(eweR">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id=";m~{fkj0@ckd^p2C-wiD">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="math_compare" id="I^O9qgF_s{WryNGokv(Q">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_method" id="PyQ0}DK3uHSgyiAFhG)}">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="Garq*/F_NT?WW|[3g0iY">
+                        <field name="TEXT">login</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="9x%Qex|e[93/v`M5qvg9">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="g`s4z|(kERa]C}KkV@do">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_openAnotherScreen" id="?55rbPc[f[u?rcR($Q;#">
+                <value name="SCREEN">
+                  <block type="text" id="vX/rm1iVlM]~`Tlj8l_i">
+                    <field name="TEXT">chat</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="procedures_callnoreturn" id=":Fwmw7aw_}1t{^|/+^E2" inline="false">
+                <mutation name="setbtn"></mutation>
+                <field name="PROCNAME">setbtn</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="@Nq=Oi}J6U_xNr#0Mq@b" x="110" y="-230">
+    <mutation component_type="Button" is_generic="false" instance_name="manu_login" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">manu_login</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="#PK@J|3~G-Y~R.kV$U0=">
+        <value name="SCREEN">
+          <block type="text" id="G~okuX~lmbyAD60;u,0b">
+            <field name="TEXT">login</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Q3DuE~US2l!9.M%wiA8L" x="110" y="-150">
+    <mutation component_type="Button" is_generic="false" instance_name="maun_signup" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">maun_signup</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="kny60@UM@T)^NjsW=8N{">
+        <value name="SCREEN">
+          <block type="text" id="1u)RNX(~P^oceZ)wpGOW">
+            <field name="TEXT">signup</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="NcJxMPunIHS^U?m#K^W=" x="110" y="-70">
+    <mutation component_type="Button" is_generic="false" instance_name="manu_pass" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">manu_pass</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="|5v.J[ItFDkGaG()pqG9">
+        <value name="SCREEN">
+          <block type="text" id="UYZEaOrzOL4sw1xa-B6A">
+            <field name="TEXT">pass</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Mx!iWK4KP,^hu,WyD(2)" x="110" y="10">
+    <mutation component_type="Button" is_generic="false" instance_name="maun_lang" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">maun_lang</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="o.|0n.a0o92ZXHZBcaeA">
+        <value name="SCREEN">
+          <block type="text" id="Q9o{ppA[{vD~dWU0FC$Z">
+            <field name="TEXT">lang</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="F)XS3:#kIQgQQ$#v3g,8" x="-590" y="70">
+    <field name="NAME">setbtn</field>
+    <statement name="STACK">
+      <block type="controls_if" id="Ut;30]CUbHQ6+~+77gWO">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="_2!pTp@`Sen,U[M.XXCr">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="q}_AP$R;~^^lm*ww6;J@">
+                <field name="VAR">global lang</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="5w+E0-pi:q/{HLgK$Qwt">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="u9DM+/.NI_Y2}NP4N}gd">
+            <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="manu_login"></mutation>
+            <field name="COMPONENT_SELECTOR">manu_login</field>
+            <field name="PROP">Image</field>
+            <value name="VALUE">
+              <block type="text" id="NzL#_4=|}H5S`{*;h1I;">
+                <field name="TEXT">login_EN.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="Q~Uv55!aAHL9(R^%1YpH">
+                <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="maun_signup"></mutation>
+                <field name="COMPONENT_SELECTOR">maun_signup</field>
+                <field name="PROP">Image</field>
+                <value name="VALUE">
+                  <block type="text" id="~xrnn5qB*`9BmOaR:Qz3">
+                    <field name="TEXT">signup_EN.png</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="Z)-oyGW+fNWgHxVAq?*;">
+                    <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="manu_pass"></mutation>
+                    <field name="COMPONENT_SELECTOR">manu_pass</field>
+                    <field name="PROP">Image</field>
+                    <value name="VALUE">
+                      <block type="text" id=")at)25Dt[a_m[oq@G2W3">
+                        <field name="TEXT">pass_EN.png</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="d?dUh]d9?DYa8Jk6X0O|">
+                        <mutation component_type="Button" set_or_get="set" property_name="Text" is_generic="false" instance_name="maun_lang"></mutation>
+                        <field name="COMPONENT_SELECTOR">maun_lang</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="text" id="3~=kFFG[xLmaJ/dJ;OEH">
+                            <field name="TEXT">pass_EN.png</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="hZ|j:pDM.{c+~YwbR7c}">
+                            <mutation component_type="Button" set_or_get="set" property_name="Text" is_generic="false" instance_name="maun_lang"></mutation>
+                            <field name="COMPONENT_SELECTOR">maun_lang</field>
+                            <field name="PROP">Text</field>
+                            <value name="VALUE">
+                              <block type="text" id="*o7HEPuJ9%L?#(%YBy4C">
+                                <field name="TEXT"> Change language</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="pDnQRXtMG.YWe~;SRW8s">
+            <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="manu_login"></mutation>
+            <field name="COMPONENT_SELECTOR">manu_login</field>
+            <field name="PROP">Image</field>
+            <value name="VALUE">
+              <block type="text" id="})O)hC~4]!={.*xYXOq?">
+                <field name="TEXT">login_TH.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="iI(P{WxlHypE6QDcK3Gu">
+                <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="maun_signup"></mutation>
+                <field name="COMPONENT_SELECTOR">maun_signup</field>
+                <field name="PROP">Image</field>
+                <value name="VALUE">
+                  <block type="text" id="nz$F4xzd5#JCR)/M?Q[P">
+                    <field name="TEXT">signup_TH.png</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="2uF7xQK@xiZU]p^O=.!u">
+                    <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="manu_pass"></mutation>
+                    <field name="COMPONENT_SELECTOR">manu_pass</field>
+                    <field name="PROP">Image</field>
+                    <value name="VALUE">
+                      <block type="text" id="Kt2aXmt2nW|/|.d/6_`v">
+                        <field name="TEXT">pass_TH.png</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="beH:(am]2iXZ}tYJ)xM$">
+                        <mutation component_type="Button" set_or_get="set" property_name="Text" is_generic="false" instance_name="maun_lang"></mutation>
+                        <field name="COMPONENT_SELECTOR">maun_lang</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="text" id=".~c:]2VZQeTdM:}]_[s9">
+                            <field name="TEXT">เปลี่ยนภาษา</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="210" language-version="26"></yacodeblocks>
+</xml>

@@ -1,0 +1,442 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="%|oqfO]U.}1B:P6SoW.h" x="-570" y="-390">
+    <field name="NAME">H</field>
+    <value name="VALUE">
+      <block type="math_number" id="SV}sVpvXn5gnM0f$AufO">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="*@0cY@?Lf:Bc+uby`5i7" x="-570" y="-350">
+    <field name="NAME">lang</field>
+    <value name="VALUE">
+      <block type="text" id="`S|a*N{Aaj3$)Jz=s?5]">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="gB3X-7}sMSak!7xLDjZ/" x="-570" y="-310">
+    <mutation component_type="Form" is_generic="false" instance_name="chat" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">chat</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="azY9l:eHvqJp7_bgV~[y">
+        <field name="VAR">global H</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="9yuN;E|M2ByqgSSRfoh(">
+            <mutation component_type="WebViewer" set_or_get="get" property_name="Height" is_generic="false" instance_name="Web_Viewer1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+            <field name="PROP">Height</field>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="#./-1-}qo4~g9J#$x0%S">
+            <field name="VAR">global lang</field>
+            <value name="VALUE">
+              <block type="component_method" id="Kc+Drn96$;Na?`Wq:@Q}">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                <value name="ARG0">
+                  <block type="text" id="tv=uT]c9G0z0G?ZSR3/*">
+                    <field name="TEXT">lang</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="~Hk3PCRtRrxUPO;ZkP8P">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="UF7W=?f_YnI,#[3$HZRC">
+                <mutation component_type="WebViewer" method_name="StopLoading" is_generic="false" instance_name="Web_Viewer1"></mutation>
+                <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+                <next>
+                  <block type="component_method" id="=EpZqJYUsj[n*exx53bA">
+                    <mutation component_type="WebViewer" method_name="ClearCaches" is_generic="false" instance_name="Web_Viewer1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+                    <next>
+                      <block type="component_method" id="pXRMUAsLYa;Hp{As|P.S">
+                        <mutation component_type="WebViewer" method_name="ClearCookies" is_generic="false" instance_name="Web_Viewer1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+                        <next>
+                          <block type="component_set_get" id="i8nJjELezYDWq{!c^hE2">
+                            <mutation component_type="WebViewer" set_or_get="set" property_name="IgnoreSslErrors" is_generic="false" instance_name="Web_Viewer1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+                            <field name="PROP">IgnoreSslErrors</field>
+                            <value name="VALUE">
+                              <block type="logic_boolean" id="6]|:ye54v3Kv2A;2=N?2">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="procedures_callnoreturn" id="GatF%68?3hS%H^O5=FPf" inline="false">
+                                <mutation name="set"></mutation>
+                                <field name="PROCNAME">set</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="20o[+_KkBgy-XKQsg}dl" x="70" y="-310">
+    <field name="NAME">set</field>
+    <statement name="STACK">
+      <block type="controls_if" id="yV1`Ttlr~IJBc2yNDHc_">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="bA;{o#E*~V6eNLHUC=*4">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="A%+MJO]b@q?A=7`B.u/)">
+                <field name="VAR">global lang</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="+|)%XW`A/Jt8pO-~/Qp3">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="F+bc_X-w_aBL@4P@bVm$">
+            <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="logout"></mutation>
+            <field name="COMPONENT_SELECTOR">logout</field>
+            <field name="PROP">Image</field>
+            <value name="VALUE">
+              <block type="text" id="yQztUi1WI{F(8=*XnF`V">
+                <field name="TEXT">logout_EN.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="E`?vf+9Yiwh)rZ3CN[7r">
+                <mutation component_type="WebViewer" method_name="GoToUrl" is_generic="false" instance_name="Web_Viewer1"></mutation>
+                <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+                <value name="ARG0">
+                  <block type="text" id="K4.5x!5{ov,V-8-kDScF">
+                    <field name="TEXT">https://console.dialogflow.com/api-client/demo/embedded/a08760b0-614f-4b3e-bbd9-ccbb5a4636b1</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="%Ai69jKKt2ek#|!P@,iE">
+            <mutation component_type="Button" set_or_get="set" property_name="Image" is_generic="false" instance_name="logout"></mutation>
+            <field name="COMPONENT_SELECTOR">logout</field>
+            <field name="PROP">Image</field>
+            <value name="VALUE">
+              <block type="text" id="QsF`dA2|ct]Cf[|cp,Y8">
+                <field name="TEXT">logout_TH.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="?^$|{tVseUl85D^;fc+R">
+                <mutation component_type="WebViewer" method_name="GoToUrl" is_generic="false" instance_name="Web_Viewer1"></mutation>
+                <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+                <value name="ARG0">
+                  <block type="text" id="aL_eXRmR,SjT27@=O)jH">
+                    <field name="TEXT">https://console.dialogflow.com/api-client/demo/embedded/81b24bf8-ab76-4d44-8f05-ebc02b25cb9a</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="C@?fQx,Lo}A772z+I#RO" x="-570" y="-30">
+    <mutation component_type="Form" is_generic="false" instance_name="chat" event_name="KeyboardVisiblityChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">chat</field>
+    <statement name="DO">
+      <block type="controls_if" id="u|ZAZu5~cedY[~dBp;-x">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="lexical_variable_get" id="y@KahJw24rJ?YWm(a}wG">
+            <mutation>
+              <eventparam name="isKeyboardVisible"></eventparam>
+            </mutation>
+            <field name="VAR">isKeyboardVisible</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="%VP1y4P`ESe%;ddrTbjk">
+            <mutation component_type="WebViewer" set_or_get="set" property_name="Height" is_generic="false" instance_name="Web_Viewer1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+            <field name="PROP">Height</field>
+            <value name="VALUE">
+              <block type="math_division" id="hi1Lk5Irr.l!KFFzRb_H">
+                <value name="A">
+                  <block type="lexical_variable_get" id="m{Z^QZ(T1,x.q?-BUh`1">
+                    <field name="VAR">global H</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="]u}N?pU5XeW2sV[yFnBP">
+                    <field name="NUM">1.5</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="~@f:{ilodYa8.q2Y}Y3S">
+                <mutation component_type="Button" set_or_get="set" property_name="Visible" is_generic="false" instance_name="logout"></mutation>
+                <field name="COMPONENT_SELECTOR">logout</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="M+/?VgenM4${1vo~;epE">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="D=tmE$Ly-1qnYRiu[=Kd">
+            <mutation component_type="WebViewer" set_or_get="set" property_name="Height" is_generic="false" instance_name="Web_Viewer1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web_Viewer1</field>
+            <field name="PROP">Height</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id=":{ShOYj:2p.]~?7H-=cX">
+                <field name="VAR">global H</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="]|F_K}IK,CT3qpHtP!7q">
+                <mutation component_type="Button" set_or_get="set" property_name="Visible" is_generic="false" instance_name="logout"></mutation>
+                <field name="COMPONENT_SELECTOR">logout</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="zFojR{mj2`2OINnFt#rz">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="/^x30lONy!s!pLkrX3O2" x="-570" y="210">
+    <mutation component_type="Button" is_generic="false" instance_name="logout" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">logout</field>
+    <statement name="DO">
+      <block type="component_method" id="d([x-n}PNbipQbqkM+D7">
+        <mutation component_type="Notifier" method_name="ShowChooseDialog" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="controls_choose" id="xq{M|x+w.$K14{YXgN=k">
+            <value name="TEST">
+              <block type="math_compare" id="xR:LySvd9`4B_Q.-ucDW">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="$1bPK:@h0v5%e|$|N$Ty">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="L[{aD-cQyJd|zSgYik+U">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text" id="-Dp2DeMi9rGizis|,hMY">
+                <field name="TEXT">Do you want to log out?</field>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text" id="[uT(Zv;B/M-Oxu)X.$Ta">
+                <field name="TEXT">คุณต้องการออกจากระบบ หรือไม่</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="controls_choose" id="_c9LMx,iq!L%Ujin~18z">
+            <value name="TEST">
+              <block type="math_compare" id="1IP)WJX+@*(ZbLcb/.KU">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="j:ZK0tWf~0t)YI@lt4k3">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="_W0(J,5UQhA-S[}3m]`4">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text" id="w`-rJidM8?o^=X~xw,pa">
+                <field name="TEXT">Log out</field>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text" id="cOJBg:z^==@}G7VQlj0:">
+                <field name="TEXT">ออกจากระบบ</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="controls_choose" id="cq:nB@^A86fA},.3wlXB">
+            <value name="TEST">
+              <block type="math_compare" id="_$fIP)~Q{z]YRx*GKDLV">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="m|j%k55.cB^L%@h!/$l;">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="X*;~%bfEvbV(+kUtfes!">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text" id="3I6QUbFj8x?dgm$Y*bb|">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text" id="yxbtyI%ukdko4W2]IgP0">
+                <field name="TEXT">ตกลง</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="controls_choose" id="oTN{YvJ.$Mv-vuOX/LY6">
+            <value name="TEST">
+              <block type="math_compare" id="[~8B;eR@5.bF6}!VKp{3">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="_EdahgprI5$~aP7KhoPU">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="y=,O};{bhy^_M6]0Z-!j">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="THENRETURN">
+              <block type="text" id=";1:~*K{ny~:D6:/iRCf,">
+                <field name="TEXT">NO</field>
+              </block>
+            </value>
+            <value name="ELSERETURN">
+              <block type="text" id="JFWbtUR!?-9OC*,wF@^K">
+                <field name="TEXT">ไม่</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="logic_boolean" id="c]+Q%_?]C3E;iBY+#xO#">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="oXtA)lT`!(9Cr%?0?7@Z" x="-570" y="670">
+    <mutation component_type="Notifier" is_generic="false" instance_name="Notifier1" event_name="AfterChoosing"></mutation>
+    <field name="COMPONENT_SELECTOR">Notifier1</field>
+    <statement name="DO">
+      <block type="controls_if" id="JZde1;/cG(p1^B]X]##Z">
+        <value name="IF0">
+          <block type="logic_or" id="ZXh|xf,LoH`LV^Kip@ri">
+            <field name="OP">OR</field>
+            <value name="A">
+              <block type="math_compare" id="#SzCz*IhB)Ci!g|N-|#%">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="6zK?^A+L9d[PufI@B4V/">
+                    <mutation>
+                      <eventparam name="choice"></eventparam>
+                    </mutation>
+                    <field name="VAR">choice</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="V(A?2`/;Qt-Li?9DDVCB">
+                    <field name="TEXT">OK</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_compare" id="7$2NSby8=(4.xh9CAQsk">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="8iET1CD]j0vvbmMtw2{^">
+                    <mutation>
+                      <eventparam name="choice"></eventparam>
+                    </mutation>
+                    <field name="VAR">choice</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="PT`g-_Dc{?wX~+1}d$$n">
+                    <field name="TEXT">ตกลง</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="#Za-,B=vXk,nc(bs@YQS">
+            <mutation component_type="TinyDB" method_name="ClearTag" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id="j`.MT#N2%qE]W8|m^{7F">
+                <field name="TEXT">login</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_openAnotherScreen" id="%A@w6|dN{W$sHR5qLulC">
+                <value name="SCREEN">
+                  <block type="text" id=":AeY3~P~(PxM.]%.tpK5">
+                    <field name="TEXT">Screen1</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="P~?(r,kZ]XW7VNpa:t46" x="-570" y="890">
+    <mutation component_type="Form" is_generic="false" instance_name="chat" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">chat</field>
+    <statement name="DO">
+      <block type="controls_closeApplication" id="vo//[w^|`nlVDYox-TgM"></block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="210" language-version="26"></yacodeblocks>
+</xml>

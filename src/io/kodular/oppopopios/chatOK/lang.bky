@@ -1,0 +1,160 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="1e!+_T$-shXpe#OkX`/T" x="-590" y="-270">
+    <field name="NAME">lang</field>
+    <value name="VALUE">
+      <block type="text" id="Qfdj4W4#$Kq|p`.n{KG%">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="guG18)R6s_8:e:Xzg|3-" x="-590" y="-230">
+    <mutation component_type="Form" is_generic="false" instance_name="lang" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">lang</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="3VG!HDV3w8]}w3maQSNk">
+        <field name="VAR">global lang</field>
+        <value name="VALUE">
+          <block type="component_method" id="Ig!+HE~/]:1=2/;dI{*9">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id="|^~LnZ8g3t60,mDKfm(9">
+                <field name="TEXT">lang</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="2xWJ.dUxSB@Hg.,(eweR">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="c6iJ0OX$T_u48BSn384W">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="math_compare" id="KaAQ^q]d_K:MRJ57ATn?">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="A5#q#}vit;n39;rdx_mN">
+                    <field name="VAR">global lang</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="Y35SU,oJ5|g/Iv_Wi90@">
+                    <field name="TEXT">EN</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="Zz=~PNE^2D!C00bEARHw">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text" id="4R3n2h.ig,)d]y/MZ(Rn">
+                    <field name="TEXT"> Change language</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_set_get" id="=U3AX~F?#%vVF@F~$97S">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text" id="ms(ud]]aoC*7*g!5Nfn6">
+                    <field name="TEXT">เปลี่ยนภาษา</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Q3DuE~US2l!9.M%wiA8L" x="-590" y="30">
+    <mutation component_type="Button" is_generic="false" instance_name="TH" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">TH</field>
+    <statement name="DO">
+      <block type="component_method" id="AUaH=NFL.zsMkU~TVIYb">
+        <mutation component_type="TinyDB" method_name="ClearTag" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="7bPo!V$:tXr;Cz)NbC!0">
+            <field name="TEXT">lang</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="YQ)at1F!QIopNA:KScwv">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id="5MnpPvUV4S0cX0s9BJNp">
+                <field name="TEXT">lang</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="/5wy/h@XkLk%ww;|%zj_">
+                <field name="TEXT">TH</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_openAnotherScreen" id=")i1V7+55^epi{M#J}NtV">
+                <value name="SCREEN">
+                  <block type="text" id=".,`/s=#U3sb~,A;!-*$X">
+                    <field name="TEXT">Screen1</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="@Nq=Oi}J6U_xNr#0Mq@b" x="-590" y="230">
+    <mutation component_type="Button" is_generic="false" instance_name="EN" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">EN</field>
+    <statement name="DO">
+      <block type="component_method" id="b%yK}//sz=_/KGiePgF;">
+        <mutation component_type="TinyDB" method_name="ClearTag" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id=":@mQb42{bORR.Jv:b^95">
+            <field name="TEXT">lang</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id=";!tG1)fY7iEr/R2Fea1[">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id=",,}6N5[6?-z|+vEWY3#R">
+                <field name="TEXT">lang</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="P6kDLLHaZl3j]O8-Q}0!">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_openAnotherScreen" id="HK7!TML4pSG;w+M.uWNF">
+                <value name="SCREEN">
+                  <block type="text" id="1Vc~SR6%h:MWzjAH`]M!">
+                    <field name="TEXT">Screen1</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="210" language-version="26"></yacodeblocks>
+</xml>
